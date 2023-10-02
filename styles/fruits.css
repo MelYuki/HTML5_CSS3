@@ -1,0 +1,41 @@
+/* Style général */
+table 
+{
+    color: gray;
+    width: 500px;
+    border-bottom: 1px solid gray
+}
+tr:hover
+{ 
+    background-color: beige
+}
+td:hover
+{ 
+    background-color: darkslategray;
+    border-bottom: 1px solid gray
+}
+td:nth-child(1)
+{ 
+    font-weight: bold;
+}
+
+/* id */
+#tr1{
+    color: grey;
+    background-color: orange
+}
+#td1{
+    background-color: white
+}
+
+/* class */
+/* .title{
+    font-weight: bold
+} */
+.lightblue{
+    background-color: lightskyblue
+}
+.darkblue{
+    color: white;
+    background-color: darkblue
+}

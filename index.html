@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <link rel="stylesheet" href="./styles/style.css"/>
+		<meta charset="utf-8"/>
+        <!-- viewport sert à gérer les différents type d'écran rencontrés -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	    <title>HTML - CSS - Marc Albert</title>
+	</head>
+	<body>
+		<!-- HTML -->
+		<h1>Hello HTML</h1>
+		<section>
+			<p>Paragraphe coucou</p>
+
+			Retour à la ligne<br>
+
+			<blockquote>Balise de citation</blockquote>
+
+			<hr>
+
+			<div>
+				div délimite un bloque de contenu
+			</div>
+
+			<section>
+				section fait pareil
+			</section>
+		</section>
+		
+
+		<!-- Insertion de liens -->
+		<section>
+			<a href="http://www.google.com/">
+				La balise a fait des liens
+			</a>
+			<br>
+			<a href="http://www.google.com/" target="_blank">
+				L'attribut target=_blank ouvre un nouvel onglet
+			</a>
+			<br>
+
+			<a href="./pages/page1.html">Page 1</a><br>
+			<a href="./pages/page2.html">Page 2</a><br>
+			<a href="./pages/page3.html">Page 3</a><br>
+
+			<p>
+				<a href="./pages/fruits.html">Exo : Tableau de fruits</a>
+			</p>
+		</section>
+
+		<!-- Insertion d'image -->
+		<section>
+			Intégration d'une image<br>
+			<img src="./img/luffy.jpg">
+		</section>
+
+		<!-- Exo -->
+		<section>
+			Intégration d'une image qui est un lien<br>
+			<a href="http://www.google.com/">
+				<img src="./img/luffy.jpg">
+			</a>
+		</section>
+
+		<!-- Listes -->
+		<section>
+			<ul>
+				<li>Item d'une liste non-ordonnée</li>
+				<ul>
+					<li>Item de liste non-ordonnée, imbriquée</li>
+					<li>Item de liste non-ordonnée, imbriquée</li>
+				</ul>
+				<li>Item d'une liste non-ordonnée</li>
+			</ul>
+			<ol>
+				<li>Item d'une liste ordonnée</li>
+				<ol>
+					<li>Item de liste ordonnée, imbriquée</li>
+					<li>Item de liste ordonnée, imbriquée</li>
+				</ol>
+				<li>Item d'une liste ordonnée</li>
+			</ol>
+		</section>
+
+		<!-- Tableaux -->
+		<section>
+			<!-- Balise d'ouverture de tableau -->
+			<table border="1">
+				<!-- Balise d'ajout d'une ligne d'un tableau -->
+				<tr>
+					<!-- Balise d'ajout de cellule -->
+					<td colspan="3" align="center">contenu d'une cellule</td>
+				</tr>
+				<tr>
+					<td>contenu d'une cellule</td>
+					<td>contenu d'une cellule</td>
+					<td rowspan="2">contenu d'une cellule</td>
+				</tr>
+				<tr>
+					<td>contenu d'une cellule</td>
+					<td>contenu d'une cellule</td>
+				</tr>
+			</table>
+		</section>
+		<br>
+
+		<!-- Exo -->
+		<section>
+			<table border="1" width="600" cellpadding="10" cellspacing="20" bgcolor="red">
+				<!-- Balise d'ajout d'une ligne d'un tableau -->
+				<tr>
+					<!-- Balise d'ajout de cellule -->
+					<td colspan="3">Contenu de la cellule 1</td>
+				</tr>
+				<tr>
+					<td>Contenu de la cellule 3</td>
+					<td rowspan="3">Contenu de la cellule 4</td>
+				</tr>
+				<tr>
+					<td>Contenu de la cellule 3</td>
+				</tr>
+				<tr>
+					<td>Contenu de la cellule 3</td>
+				</tr>
+			</table>
+		</section>
+		<hr>
+
+		<!-- CSS -->
+		<h1>Welcome CSS</h1>
+
+		<!-- Ex10 -->
+		<p>
+			<a href="./pages/ex10.html">Exercice 10</a>
+		</p>
+		<hr>
+
+		<!-- HTML5 -->
+		<h1>HTML 5</h1>
+		<section>
+			<p>Code minimal</p>
+			<p>€lements de section</p>
+			<p>€lements audio</p>
+			<p>Balise iframe pour introduire de d'html dans de l'html</p>
+			<br>
+
+			<p>€lements vidéo</p>
+			Vidéo en autoplay (commentée)
+			<br>
+			<!-- <video controls autoplay loop style="border:solid 3px red;" src="./vid/windowsill.mp4"></video> -->
+			<br>
+
+			<br>
+			Vidéo en autoplay et mutée (commenté)
+			<br>
+			<!-- <video controls autoplay muted loop style="border:solid 3px red;" src="./vid/windowsill.mp4" poster="./img/luffy.jpg"></video> -->
+			<br>
+
+			<br>
+			Vidéo importée dans une iframe
+			<br>
+			<iframe width="375" height="210" src="https://www.youtube.com/embed/iHtRG8EixWY" frameborder="0" allowfullscreen></iframe>
+			<br>
+
+			<p>Balise canvas, qui insert du dessin js</p>
+			<p>Balise svg</p>
+			<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+				<g>
+					<title>Layer 1</title>
+				<line stroke="#7f0000" id="svg_8" y2="410.00002" x2="193" y1="102" x1="193" stroke-width="3" fill="none"/>
+				<line stroke="#7f0000" id="svg_9" y2="408" x2="194.99997" y1="408" x1="555" stroke-width="3" fill="none"/>
+				<text transform="rotate(-90 163.847 261.917) matrix(1.39198 0 0 1.49749 -135.624 -106.045)" stroke="#7f0000" font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Playfair Display'" font-size="24" id="svg_10" y="255.74811" x="167.83608" stroke-width="0" fill="#000000">VISITED</text>
+				<text transform="matrix(1.39198 0 0 1.49749 -136.624 -50.045)" stroke="#7f0000" font-style="italic" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Playfair Display'" font-size="24" id="svg_11" y="334.54686" x="333.06878" stroke-width="0" fill="#000000">DAYS</text>
+				<path d="m195,404c0,-1 -0.70711,-2.29291 0,-3c0.70711,-0.70709 0.5405,-2.0535 1,-4c0.51375,-2.17624 1.5405,-4.0535 2,-6c0.51375,-2.17624 0.5405,-3.0535 1,-5c0.51375,-2.17624 1.29289,-3.29291 2,-4c0.70711,-0.70709 0.77025,-4.02676 1,-5c0.51375,-2.17624 1.48625,-2.82376 2,-5c0.22975,-0.97324 1.4588,-1.69345 2,-3c0.38269,-0.92389 0.4588,-1.69345 1,-3c0.76537,-1.84775 0.29289,-2.29291 1,-3c0.70711,-0.70709 1.29289,-1.29291 2,-2c0.70711,-0.70709 0.61731,-1.07611 1,-2c0.5412,-1.30655 1.29289,-1.29291 2,-2c0.70711,-0.70709 1.4588,-0.69345 2,-2c0.38269,-0.92389 1,-1 1,-2l0,-1l1,0" id="svg_12" stroke-width="0" stroke="#7f0000" fill="none"/>
+				<path id="svg_19" d="m194,405c0,0 42,-139 127,-143c85,-4 108,86 123,26c15,-60 98,-97 98,-97" opacity="NaN" stroke="#00bf00" fill="none"/>
+				</g>
+			</svg>
+
+			<p>Balise figure / figcaption</p>
+			<hr>
+		</section>
+
+		<!-- CSS3 -->
+		<h1>CSS 3</h1>
+		<section>
+			<p>Les nouveaux sélecteurs</p>
+
+			<p>Les [attr]</p>
+			<p>Les :nth- </p>
+
+			<!-- Exo -->
+			<div>
+				<table border="0" cellpadding="1">
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+				</table>
+				<table border="0">
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+				</table>
+				<table border="0">
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+				</table>
+				<table border="0">
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+					<tr>
+						<td>Contenu de la cellule 1.1</td>
+						<td>Contenu de la cellule 1.2</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<!-- Formulaires -->
+		<p>Les formulaires</p>
+		<section>
+			<form action="/ma-page-de-traitement" method="post" tabindex="-1">
+				<div>
+					<!-- Avec attribut autocomplete -->
+					<label for="name">Nom :</label>
+					<input type="text" id="name" name="user_name" autocomplete="on">
+				</div>
+				<div>
+					<!-- Avec attribut required -->
+					<label for="firtName">Prénom :</label>
+					<input type="text" id="firstname" name="user_firstname" required>
+				</div>
+				<div>
+					<!-- Avec attribut placeholder -->
+					<label for="mail">e-mail :</label>
+					<input type="email" id="mail" name="user_mail" placeholder="example@domaine.com">
+				</div>
+				<div>
+					<label for="msg">Message :</label>
+					<textarea id="msg" name="user_message"></textarea>
+				</div>
+
+				<div>
+					<label>Votre couleur :</label>
+					<input type="color" id="color" name="user_color">
+				</div>
+				<div>
+					<label>Date du jour :</label>
+					<input type="date" id="date" name="date">
+				</div>
+				<input type="submit" name="Send">
+			</form>
+		</section>
+		<br>
+
+		<!-- Exo -->
+		<section>
+			<div id="sub1">
+				<h2>Inscrivez-vous:</h2>
+				<form method="post">
+					<p>
+						<label>Nom : </label>
+						<input type="text" name="nom" id="name" required>
+					</p>
+					<p>
+						<label>Site web : </label>
+						<input type="url" id="url" required placeholder="https://">
+					</p>
+					<p>
+						<label>E-mail : </label>
+						<input type="email" id="email" required>
+					</p>
+
+					<p><input type="submit" value="Send"></p>
+				</form>
+			</div>
+
+			<div id="sub2">
+				<h2>Inscrivez-vous (2):</h2>
+				<form method="get">
+					<p>
+						<label>Nom : </label>
+						<input type="text" id="name2" required>
+					</p>
+					<p>
+						<label>Semaine du: </label>
+						<input type="date" name="date" required>
+					</p>
+					<p>
+						<label>au : </label>
+						<input  type="date" required name="date2">
+					</p>
+					<p>
+						<label>Site web : </label>
+						<input type="url" id="url2" required placeholder="http://">
+					</p>
+					<p>
+						<label>E-mail : </label>
+						<input type="email" id="email2" required>
+					</p>
+					<p>
+						<label>Inscription  : </label>
+						<input type="text" id="email" required value="Au site Zs4" readonly>
+					</p>
+
+					<p><input type="submit" value="Envoyer"></p>
+				</form> 
+			</div>
+		</section>
+		<br>
+
+		<!-- Transition -->
+		<p id="trans">
+			TRANSITION CSS3
+			<br>
+			<a href="#">Survolez-moi&nbsp;!</a>
+		</p>
+
+		<p>
+			<h2 class="box">Autre Transition</h2>
+		</p>
+
+		<!-- Transformation -->
+		<div align="center" id="a0"><br><br>normal</div>
+		<div align="center" id="a1"><br><br>Skew</div>
+		<div align="center" id="a2"><br><br>Scale</div>
+		<div id="trans2">
+			<div align="center" id="a3"><br><br>translate</div>
+		</div>
+		<div align="center" id="a4"><br><br>rotate</div>
+		<div align="center" id="a5"><br><br>rotate avec déclanchement</div>
+
+		<!-- Animation -->
+		<p>ANIMATION CSS3</p>
+		<div class="anim box2"><h3>Mon Animation</h3></div>
+
+		<!-- Parabis -->
+		<p>PARABIS (position)</p>
+
+		<!-- Paralax -->
+		<p>PARALAX</p>
+
+		<!-- Media Query -->
+		<p>MEDIA QUERY</p>
+
+		<!-- Flexbox -->
+		<h1>FLEXBOX</h1>
+		<br>
+
+		<div class="flexbox">
+			<p>boîte 1</p>
+			<p>boîte 2</p>
+			<p>boîte 3</p> 
+			<p>boîte 4</p>
+		</div>
+		<br>
+
+		<!-- Exo 1 -->
+		<div class="exo1">
+			<p>boîte 1</p>
+			<p>boîte 2</p>
+			<p>boîte 3</p> 
+			<p>boîte 4</p>
+		</div>
+		<br>
+
+		<!-- Exo 2 -->
+		<div class="exo2">
+			<p>€lement 1</p>
+			<p>€lement 2</p>
+			<p>€lement 3</p> 
+			<p>€lement 4</p>
+		</div>
+
+		<!-- Exo 3 -->
+		<div class="exo3">
+			<p>coucou</p>
+			<p>hello</p>
+			<p>hello</p> 
+			<p>hello</p>
+		</div>
+	</body>
+</html>

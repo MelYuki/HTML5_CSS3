@@ -1,0 +1,362 @@
+h1{
+    color: teal;
+}
+/* body{
+    background-image: url("../img/luffy.jpg");
+} */
+
+/* Selection d'attribut(s) */
+[href]{
+    font-style: italic;
+}
+li:nth-child(even){
+    /* even -> paire */
+    color: blueviolet
+}
+li:nth-child(odd){
+    /* odd -> impaire */
+    color: royalblue
+}
+
+/* Exo :nth */
+div>:nth-child(1) tr:nth-child(odd){
+    background-color:red
+}
+div>:nth-child(2) tr:nth-child(even){
+    background-color:blue
+}
+div>:nth-child(3) tr:nth-last-child(-n+2){
+    background-color:green
+}
+div>:nth-child(4) tr:nth-child(2){
+    background-color:green
+}
+table{margin-bottom:20px}
+
+/* Exo formulaire */
+div>h2>form{
+    font-family:arial
+}
+div>h2{
+    color:#758DAC
+}
+#sub1{
+    margin: 0 auto ;
+    width: 500px;
+    background-color: #CCC;
+    padding: 12px 20px 20px
+}
+#sub1 label{
+    display: block
+}
+#sub1 input{
+    width: 250px;
+    padding: 4px;
+    border: 1px solid #555
+}
+#sub1 input[type="submit"]{
+    width: 250px;
+    padding: 4px 15px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    border-right: 4px solid #555
+}
+#sub1 input[required]{
+    border-right: 4px solid orange
+}
+#sub1 input:invalid{
+    border-right: 4px solid red
+}
+#sub1 input:valid{
+    border-right: 4px solid green
+}
+#sub1 input[type="submit"]{
+    width: 250px;
+    padding: 4px 15px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    border-right: 8px solid #555
+}
+
+#sub2{
+    margin: 0 auto;
+    width:500px;
+    background-color:#eee;
+    padding: 12px 20px 20px
+}
+#sub2 label{
+    width: 100px;
+    display: inline-block
+}
+#sub2 input{
+    display: inline-block;
+    border-radius: 3px;
+    width: 250px;
+    padding: 4px;
+    border: 1px solid #999
+}
+#sub2 input:focus{
+    background: #ddd;
+    border: 1px solid #999
+}
+#sub2 input[type="submit"]{
+    width: 250px;
+    margin-left:100px;
+    padding: 4px 15px;
+    background: #555;
+    color: #fff;
+    cursor: pointer;
+    border-right: 4px solid #555
+}
+input[required]{
+    border-right: 4px solid orange
+}
+#sub2 input:invalid{
+    border-right: 4px solid red
+}
+#sub2 input:valid{
+    border-right: 4px solid green
+}
+#sub2 input[type="submit"]{
+    width: 250px;
+    padding: 4px 15px;
+    background: #555;
+    color: #fff;
+    cursor: crosshair;
+    border-right: 8px solid #555
+}
+
+/* transition */
+#trans>a {
+    font-size: 4em;
+    font-weight: bold;
+    color: #789;
+    text-decoration: none;
+    /* webkit */
+    transition: all 2s ease
+}
+#trans>a:hover
+{
+    color: #0a0;
+    padding-left: 150px;
+}
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    /* transition: width 2s ease, height 3s linear */
+    /* transition: width 2s ease, height 3s linear 2s */
+    transition: all 2s ease
+}
+.box:hover{
+    width: 200px;
+    height: 400px;
+    transition: width 2s ease, height 3s linear 2s
+}
+
+/* Transformation */
+#a0 {
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    transition: background-color 1s ease, font-size 1s ease 0.5s, color 2s ease 0.8s, padding 2s ease 0.8s ;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+}
+#a1 {
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: skew(30deg, 20deg);
+}
+#a2{
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: scale(2, 2);
+}
+#trans2{
+    height: 200px;
+    width: 500px;
+}
+#a3{
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: translateY(20px) translateX(100px);
+}
+#trans2:hover #a3{
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: translateY(300px) translateX(100px);
+}
+#a4{
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: rotate(180deg);
+}
+#a5{
+    transform-origin: 50px 58px;
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    transition: all 2s ease;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+}
+#a5:hover
+{
+    margin: 100px;
+    padding:15px 15px 15px 5px;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    font-family: arial;
+    font-size: 19px;
+    transform: rotate(360deg);
+}
+
+/* Animation */
+@keyframes anim {
+    0%{color: red;}
+    50%{color: green;}
+    100%{color: blue;}
+}
+@keyframes box2 {
+    0%{background-color: blue;}
+    50%{background-color: green;}
+    100%{background-color: red;}
+}
+.anim{
+    color: #999;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    transition: all 5s ease;
+}
+.anim:hover{
+    animation: anim 5s;
+}
+.box2{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    transform-origin: 50px 58px;
+    transition: all 5s ease;
+}
+.box2:hover{
+    width: 150px;
+    height: 100px;
+    transform: rotate(360deg);
+    animation: box2 5s;
+}
+
+/* Flexbox */
+/* height: 100vh; -> utilise 100% de le (h)hauteur du (v)iewport */
+/* width: 100vw; -> utilise 100% de la (w)largeur du (v)iewport */
+.flexbox{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    background-color: orange;
+}
+.flexbox>p{
+    padding: 5px;
+    margin: 5px;
+}
+.flexbox>p:nth-child(1){
+    background: #ddd;
+}
+.flexbox>p:nth-child(2){
+    background: #aaa;
+}
+.flexbox>p:nth-child(3){
+    background: #888;
+}
+.flexbox>p:nth-child(4){
+    background: #555;
+}
+
+.exo1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: orange;
+}
+.exo1>p{
+    padding: 5px;
+    margin: 10px;
+}
+.exo1>p:nth-child(1){
+    background: #ddd;
+}
+.exo1>p:nth-child(2){
+    background: #aaa;
+    align-self: flex-end;
+}
+.exo1>p:nth-child(3){
+    background: #888;
+    align-self: flex-start;
+}
+.exo1>p:nth-child(4){
+    background: #555;
+    align-self: flex-end;
+}
+
+.exo2{
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+}
+.exo2>p{
+    margin-left: 10px;
+}
+.exo2>p:nth-child(1){
+    order: 1;
+}
+.exo2>p:last-child{
+    order: -1;
+}
+
+.exo3{
+    display: flex;
+}
+.exo3>p{
+    border: 1px solid red;
+}
+.exo3>p:first-child{
+    color: red;
+    flex: 2
+}
+.exo3>p:last-child{
+    color: red;
+    flex: 2
+}
